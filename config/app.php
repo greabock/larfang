@@ -137,13 +137,20 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 
 		/*
+		 * Packages
+		 */
+		'Barryvdh\Debugbar\ServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+
+
+		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\BusServiceProvider',
-		'App\Providers\ConfigServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'App\Core\CoreServiceProvider',
+		'App\Frontend\FrontendServiceProvider',
+		'App\User\UserServiceProvider',
+		'App\Backend\BackendServiceProvider',
+
 
 	],
 
@@ -192,6 +199,9 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+	    'Widget'    => 'Greabock\Widget\Facade',
+	    'Debugbar'  => 'Barryvdh\Debugbar\Facade',
 
 	],
 

@@ -5,7 +5,11 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*"
+		"laravel/framework": "5.0.*",
+		"barryvdh/laravel-debugbar": "~2.0",
+		"barryvdh/laravel-ide-helper": "~2.0",
+		"greabock/widget-system": "dev-master",
+		"greabock/tentacles": "dev-master"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
